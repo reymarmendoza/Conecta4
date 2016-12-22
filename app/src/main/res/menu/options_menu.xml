@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="@string/aboutText"
+        android:id="@+id/menuAbout"
+        android:icon="@android:drawable/ic_menu_info_details"/>
+    <item
+        android:title="@string/sendMessageText"
+        android:id="@+id/sendMessage"
+        android:icon="@android:drawable/ic_dialog_email"/>
+    <item
+        android:title="@string/ajustesButtonMenu"
+        android:id="@+id/settings"/>
+</menu>

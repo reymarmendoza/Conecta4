@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+    para añadirlo creo la carpeta values-en en la carpeta res indicando el mismo nombre del archivo strings
+    si quiero una regin especifica ej values-en-US para USA
+    -->
+</resources>

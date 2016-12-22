@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillAfter="true">
+    <!--fillAfter: volver al estado inicial false=si-->
+<scale
+    android:fromXScale="1.0"
+    android:toXScale="2.0"
+    android:fromYScale="1.0"
+    android:toYScale="3.0"
+    android:pivotX="50%"
+    android:pivotY="50%"
+    android:duration="5000"/>
+    <!--
+    animacion de escala
+
+    fromXScale toXScale duplica el ancho
+    fromYScale toYScale triplica el alto
+    pivot toma como punto de referncia el punto medio (50%)
+    -->
+
+<rotate
+    android:fromDegrees="0"
+    android:toDegrees="360"
+    android:pivotX="50%"
+    android:pivotY="50%"
+    android:duration="4000"
+    android:startOffset="5000"/>
+    <!--
+    animacion de rotacion
+    startOffset: es un inicio retrasado, se coloca igual al de la primera animacion para cuando termine la primera inicie esta
+    fromDegrees toDegrees rota el view
+    pivot toma como punto de referncia el punto medio (50%)
+    -->
+
+<!--
+<scale xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fromXScale="1.0"
+    android:toXScale="1.0"
+    android:fromYScale="0.2"
+    android:toYScale="1.0"
+    android:interpolator="@android:anim/bounce_interpolator"
+    android:duration="4000"/>
+-->
+    <!--
+    <scale xmlns:android="http://schemas.android.com/apk/res/android" // se usa solo cuando hay una unica animacion
+     si se quieren varias animaciones se usa set, el tiempo esta definido en MILISEGUNDOS
+
+    en este caso se busca un efecto de caida de telon por tanto from y to tienen el mismo valor para que no halla movimiento horizontal
+    fromXscale: especifica el valor incial del escalado segun el eje X
+    toXScale: especifica el valor final del escalado
+    el movimiento vertical desde from hasta to
+    fromYScale: inicia en un 20% de la pantalla
+    toYScale: finaliza en el 100%
+
+    duration: especifica cuando tardara la animacion
+    interpolator: defines the rate of change of an animation. This allows the basic animation effects (alpha, scale, translate, rotate)
+    to be accelerated, decelerated, repeated, etc.
+    -->
+</set>

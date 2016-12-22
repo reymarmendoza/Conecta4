@@ -1,0 +1,234 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="corp.kingsea.reymar.conecta4.MainActivity">
+
+    <!--defino el titulo que se va a ver en la actividad-->
+    <TextView
+        android:text="@string/main_activity_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
+        android:gravity="center"/>
+    <!--agrego una linea en la parte inferior del titulo-->
+    <TextView
+        android:text="@string/messages_game_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_message"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@android:color/darker_gray"/>
+    <!--este tipo de GROUPVIEW me permite colocar una disposicion de filas y columnas-->
+    <!--la propiedad stretch aplica a todas las columnas *-->
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="12"
+        android:stretchColumns="*">
+        <!--debo definir las columnas por medio de este elemento-->
+        <TableRow android:layout_weight="1">
+            <!--le doy un estilo predefinido desde la carpeta estilos para no repetir codigo button fila,columna-->
+            <ImageButton style="@style/ImageButtonGameLand"
+                android:id="@+id/button11"
+                android:contentDescription="@string/ButtonDescription"/>
+
+            <ImageButton style="@style/ImageButtonGameLand"
+                android:id="@+id/button12"
+                android:contentDescription="@string/ButtonDescription"/>
+
+            <ImageButton style="@style/ImageButtonGameLand"
+                android:id="@+id/button13"
+                android:contentDescription="@string/ButtonDescription"/>
+
+            <ImageButton style="@style/ImageButtonGameLand"
+                android:id="@+id/button14"
+                android:contentDescription="@string/ButtonDescription"/>
+
+            <ImageButton style="@style/ImageButtonGameLand"
+                android:id="@+id/button15"
+                android:contentDescription="@string/ButtonDescription"/>
+
+            <ImageButton style="@style/ImageButtonGameLand"
+                android:id="@+id/button16"
+                android:contentDescription="@string/ButtonDescription"/>
+
+            <ImageButton style="@style/ImageButtonGameLand"
+                android:id="@+id/button17"
+                android:contentDescription="@string/ButtonDescription"/>
+
+        </TableRow>
+
+
+        <TableRow android:layout_weight="1">
+
+            <ImageButton style="@style/ImageButtonGameLand"
+                android:id="@+id/button21"
+                android:contentDescription="@string/ButtonDescription"/>
+
+            <ImageButton style="@style/ImageButtonGameLand"
+                android:id="@+id/button22"
+                android:contentDescription="@string/ButtonDescription"/>
+
+            <ImageButton style="@style/ImageButtonGameLand"
+                android:id="@+id/button23"
+                android:contentDescription="@string/ButtonDescription"/>
+
+            <ImageButton style="@style/ImageButtonGameLand"
+                android:id="@+id/button24"
+                android:contentDescription="@string/ButtonDescription"/>
+
+            <ImageButton style="@style/ImageButtonGameLand"
+                android:id="@+id/button25"
+                android:contentDescription="@string/ButtonDescription"/>
+
+            <ImageButton  style="@style/ImageButtonGameLand"
+                android:id="@+id/button26"
+                android:contentDescription="@string/ButtonDescription"/>
+
+            <ImageButton style="@style/ImageButtonGameLand"
+                android:id="@+id/button27"
+                android:contentDescription="@string/ButtonDescription"/>
+
+        </TableRow>
+
+        <TableRow android:layout_weight="1">
+
+            <ImageButton style="@style/ImageButtonGameLand"
+                android:id="@+id/button31"
+                android:contentDescription="@string/ButtonDescription"/>
+
+            <ImageButton style="@style/ImageButtonGameLand"
+                android:id="@+id/button32"
+                android:contentDescription="@string/ButtonDescription"/>
+
+            <ImageButton style="@style/ImageButtonGameLand"
+                android:id="@+id/button33"
+                android:contentDescription="@string/ButtonDescription"/>
+
+            <ImageButton style="@style/ImageButtonGameLand"
+                android:id="@+id/button34"
+                android:contentDescription="@string/ButtonDescription"/>
+
+            <ImageButton style="@style/ImageButtonGameLand"
+                android:id="@+id/button35"
+                android:contentDescription="@string/ButtonDescription"/>
+
+            <ImageButton style="@style/ImageButtonGameLand"
+                android:id="@+id/button36"
+                android:contentDescription="@string/ButtonDescription"/>
+
+            <ImageButton style="@style/ImageButtonGameLand"
+                android:id="@+id/button37"
+                android:contentDescription="@string/ButtonDescription"/>
+
+        </TableRow>
+
+        <TableRow android:layout_weight="1">
+
+            <ImageButton style="@style/ImageButtonGameLand"
+                android:id="@+id/button41"
+                android:contentDescription="@string/ButtonDescription"/>
+
+            <ImageButton style="@style/ImageButtonGameLand"
+                android:id="@+id/button42"
+                android:contentDescription="@string/ButtonDescription"/>
+
+            <ImageButton style="@style/ImageButtonGameLand"
+                android:id="@+id/button43"
+                android:contentDescription="@string/ButtonDescription"/>
+
+            <ImageButton style="@style/ImageButtonGameLand"
+                android:id="@+id/button44"
+                android:contentDescription="@string/ButtonDescription"/>
+
+            <ImageButton style="@style/ImageButtonGameLand"
+                android:id="@+id/button45"
+                android:contentDescription="@string/ButtonDescription"/>
+
+            <ImageButton style="@style/ImageButtonGameLand"
+                android:id="@+id/button46"
+                android:contentDescription="@string/ButtonDescription"/>
+
+            <ImageButton style="@style/ImageButtonGameLand"
+                android:id="@+id/button47"
+                android:contentDescription="@string/ButtonDescription"/>
+
+        </TableRow>
+
+        <TableRow android:layout_weight="1">
+
+            <ImageButton style="@style/ImageButtonGameLand"
+                android:id="@+id/button51"
+                android:contentDescription="@string/ButtonDescription"/>
+
+            <ImageButton style="@style/ImageButtonGameLand"
+                android:id="@+id/button52"
+                android:contentDescription="@string/ButtonDescription"/>
+
+            <ImageButton style="@style/ImageButtonGameLand"
+                android:id="@+id/button53"
+                android:contentDescription="@string/ButtonDescription"/>
+
+            <ImageButton style="@style/ImageButtonGameLand"
+                android:id="@+id/button54"
+                android:contentDescription="@string/ButtonDescription"/>
+
+            <ImageButton style="@style/ImageButtonGameLand"
+                android:id="@+id/button55"
+                android:contentDescription="@string/ButtonDescription"/>
+
+            <ImageButton style="@style/ImageButtonGameLand"
+                android:id="@+id/button56"
+                android:contentDescription="@string/ButtonDescription"/>
+
+            <ImageButton style="@style/ImageButtonGameLand"
+                android:id="@+id/button57"
+                android:contentDescription="@string/ButtonDescription"/>
+
+        </TableRow>
+
+        <TableRow android:layout_weight="1">
+
+            <ImageButton style="@style/ImageButtonGameLand"
+                android:id="@+id/button61"
+                android:contentDescription="@string/ButtonDescription"/>
+
+            <ImageButton style="@style/ImageButtonGameLand"
+                android:id="@+id/button62"
+                android:contentDescription="@string/ButtonDescription"/>
+
+            <ImageButton style="@style/ImageButtonGameLand"
+                android:id="@+id/button63"
+                android:contentDescription="@string/ButtonDescription"/>
+
+            <ImageButton style="@style/ImageButtonGameLand"
+                android:id="@+id/button64"
+                android:contentDescription="@string/ButtonDescription"/>
+
+            <ImageButton style="@style/ImageButtonGameLand"
+                android:id="@+id/button65"
+                android:contentDescription="@string/ButtonDescription"/>
+
+            <ImageButton style="@style/ImageButtonGameLand"
+                android:id="@+id/button66"
+                android:contentDescription="@string/ButtonDescription"/>
+
+            <ImageButton style="@style/ImageButtonGameLand"
+                android:id="@+id/button67"
+                android:contentDescription="@string/ButtonDescription"/>
+
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>
